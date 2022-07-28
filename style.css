@@ -34,11 +34,16 @@ input[type="text"] {
     padding: 6px 8px;
     outline: none;
     border: none;
-    border: 1px solid grey;
+    border: 1px solid rgba(0,0,0,.6);
     border-radius: 4px;
     margin-bottom: 4px;
+    transition: all .3s ease-in;
 }
-
+input[type="text"]:hover, input[type="text"]:focus
+       {
+           border-color: rgb(138,43,226)
+           box-shadow : 0 0 0 .18rem rgba(138,43,226, .3);
+       }
 #qrBtn {
     display: block;
     margin: 4px auto;
