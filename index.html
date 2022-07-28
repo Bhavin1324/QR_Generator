@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <div>
+                <label for="text">Enter text</label>
+                <input id="text" type="text" placeholder="Enter text/url for QR code">
+            </div>
+            <button id="qrBtn" onclick="generateQR()">Generate QR</button>
+        </div>
+        <div id="qr-image">
+            <div class="error" style="color: #ff4444;"></div>
+            <img src="" id="img">
+        </div>
+    </div>
+</body>
+</html>
